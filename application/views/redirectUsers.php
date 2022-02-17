@@ -1,7 +1,9 @@
 <?php
+require "functions.php";
+
 $email = $_POST["email"];
 function checkUsers($email){
-    $conn = new mysqli("localhost", "root", "", "trainee_db");
+    $conn = connectToDB();
     if ($conn->connect_error) {
         die("Ошибка: " . $conn->connect_error);
     }
@@ -10,15 +12,12 @@ function checkUsers($email){
     if ($result = $conn->query($sql)) {
         $rowsCount = $result->num_rows; // количество полученных строк
         if ($rowsCount) {
-            $new_url = 'http://trainee/step-two.php';
-            header('Location: ' . $new_url);
+            include "application/controllers/controller_firstform.php";
 
         } else {
-            $old_url = 'http://trainee/step-one.php';
-            header('Location: ' . $old_url);
+            include "application/controllers/controller_secondform.php";
         }
     }
 }
 
 checkUsers($email);
-

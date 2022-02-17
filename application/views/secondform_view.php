@@ -52,7 +52,7 @@
             font-family: 'Nunito', sans-serif;
         }
 
-        a, p {
+        p {
             color: #4b5156;
         }
 
@@ -60,6 +60,13 @@
             margin-left: 20px;
             margin-right: 1px; /* Отступ справа */
             margin-bottom: 10px; /* Отступ снизу */
+        }
+        a {
+            font-family: 'Nunito', sans-serif;
+            border: 1px solid #6f9ff1;
+            font-size: 17px;
+            border-radius: 5px;
+            padding: 10px;
         }
     </style>
 
@@ -73,17 +80,15 @@
 
 
 <div class="container">
-       <div class="card-body">
-        <form action="/step-three.php" method="post">
+    <div class="card-body">
             <p class="p-styling">
                 <input type="text" placeholder="Company" name="company" id="company" class="textarea" style="width: 390px">
                 <input type="text" placeholder="Position" name="position" id="position" class="textarea" style="width: 390px">
                 <input type="text" placeholder="About me" name="about" id="about" class="textarea" style="width: 805px">
                 <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png" style="width: 390px; margin-left: 230px; display: flex">
-                <input type="submit" value="Next" class="button" style="margin-top: 15px; margin-left: 725px; width: 100px">
-            </p>
+            </p><br>
+        <a href="/social" class="button" style="margin-top: 90px; margin-left: 770px">Next</a>
 
-        </form>
     </div>
 </div>
 </body>

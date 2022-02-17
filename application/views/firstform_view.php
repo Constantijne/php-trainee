@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,6 +79,13 @@
             margin-right: 1px; /* Отступ справа */
             margin-bottom: 10px; /* Отступ снизу */
         }
+        a {
+            font-family: 'Nunito', sans-serif;
+            border: 1px solid #6f9ff1;
+            font-size: 17px;
+            border-radius: 5px;
+            padding: 10px;
+        }
     </style>
 
     <title>Step #1</title>
@@ -85,6 +93,7 @@
 
 
 <body>
+<?php require "functions.php" ?>
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1wFyztWUwU_C27wsrdn0vizL8G-OxlQiK&ehbc=2E312F" width="80%"
         height="450" frameborder="0" class="map"></iframe>
 <br><br><br>
@@ -94,7 +103,6 @@
     </div>
 
     <div class="card-body">
-        <form action="functions.php" method="post">
             <p class="p-styling">
                 <input type="text" placeholder="First Name" name="f_name" id="f_name" class="textarea"
                        style="width: 390px">
@@ -117,9 +125,7 @@
                            style="width: 390px; margin-top: 20px">
             </p>
 
-
-            <input type="submit" value="Next" class="button" style="margin-top: 15px; margin-left: 720px; width: 100px">
-        </form>
+        <a href="/secondform" class="button" style="margin-top: 90px; margin-left: 750px">Next</a>
     </div>
 </div>
 </body>

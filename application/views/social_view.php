@@ -56,6 +56,13 @@
             border-radius: 5px 5px 5px 5px;
         }
 
+        a {
+            font-family: 'Nunito', sans-serif;
+            border: 1px solid #6f9ff1;
+            font-size: 17px;
+            border-radius: 5px;
+            padding: 10px;
+        }
         h1, h2, h3, h4, h5, h6, label {
             text-align: center;
             font-family: 'Nunito', sans-serif;
@@ -83,6 +90,7 @@
 
 
 <body>
+
 <div class="container">
     <div class="header-bar">
         <h1>Share link in social media</h1>
@@ -93,9 +101,7 @@
             <a href="http://twitter.com/share" class="fa fa-twitter"></a>
 
         </p>
-        <form action="step-four.php">
-            <input type="submit" value="All members" class="button" style="margin-top: -10px; margin-left: 170px; width: 120px">
-        </form>
+        <a href="/usertable" class="button" style="margin-top: 90px; margin-left: 205px">Next</a>
     </div>
 </div>
 </body>
