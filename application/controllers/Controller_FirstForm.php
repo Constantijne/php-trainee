@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Firstform extends Controller
+class Controller_FirstForm extends Controller
 {
     function action_index()
     {
@@ -22,6 +22,6 @@ class Controller_Firstform extends Controller
         } else {
             $data["login_status"] = "";
         }
-        $this->view->generate('firstform_view.php', 'firstform_view.php', $email);
+        $this->view->generate('firstform_view.php', 'template_view.php', $email);
     }
 }

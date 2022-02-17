@@ -31,7 +31,7 @@ class Route
             include "application/models/".$model_file;
         }
 
-        $controller_file = strtolower($controller_name).'.php';
+        $controller_file = $controller_name.'.php';
         $controller_path = "application/controllers/".$controller_file;
         if(file_exists($controller_path))
         {

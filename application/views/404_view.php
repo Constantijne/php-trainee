@@ -1,72 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>404 – страница не найдена</title>
+    <title>404 - Not Found</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,cyrillic'
-          rel='stylesheet' type='text/css'>
-    <style type="text/css">
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            margin: 0px;
-            padding: 0px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 16px
-        }
-
-        body {
-            background: url('/images/404.gif') center no-repeat #fff
-        }
-
-        .content {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            bottom: 10%;
-            left: 0px;
-        }
-
-        .content a {
-            display: inline-block;
-            text-decoration: none
-        }
-
-        .content a:hover {
-            opacity: 0.7
-        }
-
-        .content a, .content a:hover {
-            color: #000;
-        }
-
-        @media only screen and (max-width: 460px), screen and (max-height: 700px) {
-            .content {
-                position: static;
-            }
-
-            .content a {
-                display: block;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                font-size: 0px;
-                opacity: 0;
-            }
-
-            body {
-                background-size: cover
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style_404.css" />
 </head>
 <body>
 <div class="content">
-    <a href="/firstform">Перейти к главной странице</a>
+    <a href="/firstform" style="font-family: 'Nunito', sans-serif; font-size: 22px">Go to main page</a>
 </div>
 </body>
 </html>
