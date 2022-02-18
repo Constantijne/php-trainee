@@ -1,5 +1,6 @@
 <?php
 
+use Core\Controller\Controller;
 class Controller_FirstForm extends Controller
 {
     function action_index()

@@ -47,29 +47,6 @@ img {
     background: linear-gradient(90deg, #6f9ff1 43%, #92da87 100%);
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    align-content: center;
-    background-color: #fff;
-    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-    border: 1px solid #92da87;
-    border-radius: 5px 5px 5px 5px;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    align-content: center;
-    background-color: #fff;
-    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-    border: 1px solid #92da87;
-    border-radius: 5px 5px 5px 5px;
-}
 
 input{
     font-family: 'Nunito', sans-serif;
@@ -123,6 +100,7 @@ a {
     border-radius: 5px;
     padding: 10px;
 }
+
 .container {
     max-width: 900px;
     margin: auto;
@@ -131,9 +109,11 @@ a {
     background-color: #fff;
     -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
     box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-    border: 1px solid #92da87;
+    border: 1px solid  #92da87;
     border-radius: 5px 5px 5px 5px;
 }
+
+/*#92da87*/
 
 .map {
     display: block;
@@ -193,9 +173,6 @@ a, p {
 }
 
 .p-styling input {
-    margin-left: 20px;
-    margin-right: 1px; /* Отступ справа */
-    margin-bottom: 10px; /* Отступ снизу */
 }
 a {
     font-family: 'Nunito', sans-serif;

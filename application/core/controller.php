@@ -1,5 +1,9 @@
 <?php
 
+namespace Core\Controller;
+
+use Core\View\View;
+
 class Controller
 {
     public $model;
