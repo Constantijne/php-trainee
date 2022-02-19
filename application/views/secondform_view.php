@@ -17,4 +17,6 @@
         <a href="/social" class="button" style="margin-top: 10px; margin-left: 380px">Next</a>
 
     </div>
+    <br><br>
+    <?php var_dump($_POST['email']); ?>
 </div>

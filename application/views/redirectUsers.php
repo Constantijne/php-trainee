@@ -12,10 +12,14 @@ function checkUsers($email){
     if ($result = $conn->query($sql)) {
         $rowsCount = $result->num_rows; // количество полученных строк
         if ($rowsCount) {
-            include "application/controllers/Controller_FirstForm.php";
+            $new_url = 'http://php-trainee/secondform';
+            header('Location: ' . $new_url);
+//            include "application/views/firstform_view.php";
 
         } else {
-            include "application/controllers/Controller_SecondForm.php";
+            $new_url = 'http://php-trainee/firstform';
+            header('Location: ' . $new_url);
+//            include "application/views/secondform_view.php";
         }
     }
 }
