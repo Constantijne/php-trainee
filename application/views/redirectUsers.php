@@ -10,16 +10,14 @@ function checkUsers($email){
 
     $sql = "SELECT * FROM users where email = '$email'";
     if ($result = $conn->query($sql)) {
-        $rowsCount = $result->num_rows; // количество полученных строк
+        $rowsCount = $result->num_rows;
         if ($rowsCount) {
             $new_url = 'http://php-trainee/secondform';
             header('Location: ' . $new_url);
-//            include "application/views/firstform_view.php";
 
         } else {
             $new_url = 'http://php-trainee/firstform';
             header('Location: ' . $new_url);
-//            include "application/views/secondform_view.php";
         }
     }
 }

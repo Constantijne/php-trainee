@@ -6,17 +6,21 @@
 
 <div class="container">
     <div class="card-body">
-        <p >
-            <input type="text" placeholder="Company" name="company" id="company" class="textarea" style="width: 390px; height: 25px">
-            <input type="text" placeholder="Position" name="position" id="position" class="textarea"
-                   style="width: 390px; height: 25px">
-            <input type="text" placeholder="About me" name="about" id="about" class="textarea" style="width: 390px; height: 25px; margin-top: 5px">
-            <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png"
-                   style="width: 390px; height: 25px; display: flex; margin-top: -47px; margin-left: 416px">
-        </p>
-        <a href="/social" class="button" style="margin-top: 10px; margin-left: 380px">Next</a>
-
+        <form action="social_view.php">
+            <p>
+                <input type="text" placeholder="Company" name="company" id="company" class="textarea"
+                       style="width: 390px; height: 25px">
+                <input type="text" placeholder="Position" name="position" id="position" class="textarea"
+                       style="width: 390px; height: 25px">
+                <input type="text" placeholder="About me" name="about" id="about" class="textarea"
+                       style="width: 390px; height: 25px; margin-top: 5px">
+                <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png"
+                       style="width: 390px; height: 25px; display: flex; margin-top: -47px; margin-left: 416px">
+            </p>
+            <button class="button" style="margin-top: 10px; margin-left: 750px">Next</button>
+            <script src="/js/getAvatarScript.js"></script>
+        </form>
     </div>
-    <br><br>
-    <?php var_dump($_POST['email']); ?>
+    <br>
+    <br>
 </div>

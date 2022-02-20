@@ -17,3 +17,8 @@
     </p>
     <a href="/usertable" class="button" style="margin-top: 90px; margin-left: 240px">Next</a>
 </div>
+<?php
+
+    var_dump($_FILES);
+
+?>
