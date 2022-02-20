@@ -34,7 +34,7 @@
             <br><input type="email" class="email_area" placeholder="Email" name="email" id="email"
                        style="width: 390px; margin-top: 20px">
 
-            <button class="button" style="margin-top: 10px; margin-left: 750px">Next</button>
+            <button class="button" id="first_to_second_btn" style="margin-top: 10px; margin-left: 750px">Next</button>
             <script src="/js/getEmailScript.js"></script>
         </p>
     </form>

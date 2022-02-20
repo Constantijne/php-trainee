@@ -19,6 +19,6 @@
 </div>
 <?php
 
-    var_dump($_FILES);
+    var_dump($_FILES['profile_pic'], $_POST['profile_pic']);
 
 ?>
